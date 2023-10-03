@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <%- include("../layout/head");  %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      font-family: arial;
+      text-align: center;
+    }
+    
+    .price {
+      color: rgb(255, 170, 0);
+      font-size: 22px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    .card img {
+      display: block;
+      margin: 0 auto; /* Center the image horizontally within the card */
+    }
+      </style>
+</head>
+<!-- Menu-->
+<%- include("../layout/nav.ejs"); %>
+<!-- End Menu-->
+<h1>Recommended:</h1>
+<br>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/81h2yu7SFML._AC_UX679_.jpg" style="width:100%">
+        <p>MCPORO Workout Shirts for Men Short Sleeve Quick Dry Athletic Gym Active T Shirt Moisture Wicking</p>
+        <p class="price">$43.99</p>
+        <a class="btn bt" href="https://www.amazon.com/MCPORO-Workout-Athletic-Moisture-Wicking/dp/B08BBYCN46/ref=sr_1_1_sspa?keywords=gym+shirts&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">Add to cart</a>
+      </div>
+    </div>
+    <!--div class="column">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71LPdu26vxL._AC_UL480_FMwebp_QL65_.jpg" style="width:100%">
+          <p>MCPORO Workout Shirts for Men Short Sleeve Quick Dry Athletic Gym Active T Shirt Moisture Wicking</p>
+          <p class="price">$33.99</p>
+          <a class="btn bt" href="Register.html">Add to cart</a>
+        </div>  
+    </div>
+    <div class="column">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71wtBqz2U-S._AC_UL480_FMwebp_QL65_.jpg" style="width:100%">
+          <p>MCPORO Workout Shirts for Men Short Sleeve Quick Dry Athletic Gym Active T Shirt Moisture Wicking</p>
+          <p class="price">$31.99</p>
+          <a class="btn bt" href="Register.html">Add to cart</a>
+        </div-->  
+        <div class="column">
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51ychj3oHxL._AC_UL480_FMwebp_QL65_.jpg" style="width:50%">
+            <p>BROKIG Mens Zip Joggers Pants - Casual Gym Workout Track Pants Comfortable Slim Fit Tapered Sweatpants with Pockets</p>
+            <p class="price">$28.99</p>
+            <a class="btn bt" href="https://www.amazon.com/BROKIG-Mens-Zip-Jogger-Pants/dp/B071FJ88QJ/ref=sr_1_14_sspa?keywords=gym+pants&sr=8-14-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1" target="_blank">Add to cart</a>
+          </div>
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/71KjPeUVjZL._AC_UX500_.jpg" style="width:100%">
+              <p>WHITIN Men's Cross-Trainer | Barefoot & Minimalist Shoe | Zero Drop Sole | Wide Toe Box</p>
+              <p class="price">$43.88</p>
+              <a class="btn bt" href="https://www.amazon.com/WHITIN-Minimalist-Barefoot-Training-Treadmill/dp/B08QHJ6MGS/ref=sr_1_1_sspa?keywords=gym+shoes&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">Add to cart</a>
+            </div>  
+        </div>
+        <div class="column">
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/51D7YpNxpyL._AC_UL480_FMwebp_QL65_.jpg" style="width:50%">
+              <p>BlenderBottle Classic V2 Shaker Bottle Perfect for Protein Shakes and Pre Workout, 28-Ounce, Black</p>
+              <p class="price">$10.99</p>
+              <a class="btn bt" href="https://www.amazon.com/BlenderBottle-C03596-Classic-Bottle-28-Ounce/dp/B07TL6PNLD/ref=sr_1_4?keywords=gym+bottle&sr=8-4" target="_blank">Add to cart</a>
+            </div>  
+        </div>
+  </div>
+
+  <br>
+  <br>
+  <div class="row">
+    <div class="column">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/61BbKeZ6sNL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="width:100%">
+          <p>Muscle Feast Creapure Creatine Monohydrate Powder for Muscle Growth Nutritional_Supplement, Vegan Keto Friendly Gluten-Free Easy to Mix, Unflavored, 300g, 55.0 Servings (Pack of 1)</p>
+          <p class="price">$33.99</p>
+          <a class="btn bt" href="https://www.amazon.com/Muscle-Feast-Monohydrate-Gluten-Free-Unflavored/dp/B008S0I1Q4/ref=sr_1_4_sspa?keywords=muscleblaze+creatine+monohydrate&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">Add to cart</a>
+        </div>
+      </div>
+          <div class="column">
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/41L2GfzDkpL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="width:100%">
+              <p>BROKIG Mens Zip Joggers Pants - Casual Gym Workout Track Pants Comfortable Slim Fit Tapered Sweatpants with PocketsMuscleBlaze Whey Performance (70%) Protein, 4.4 lb Chocolate</p>
+              <p class="price">$178.30</p>
+              <a class="btn bt" href="https://www.amazon.com/MuscleBlaze-Whey-Performance-Protein-Chocolate/dp/B07PMDKRWL/ref=sr_1_5?keywords=muscleblaze+protein&sr=8-5" target="_blank">Add to cart</a>
+            </div>
+          </div>
+          <div class="column">
+              <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71vZLDDvSIL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="width:100%">
+                <p>Foclassic Mens Workout Gloves Weight Lifting Gloves for Men Women Gym Exercise Gloves with Wrist Wrap Support Palm Protection and Grips Gloves for Women Wrist Wrap Gloves for Sport Daily Use</p>
+                <p class="price">$20.99</p>
+                <a class="btn bt" href="https://www.amazon.com/Workout-Lifting-Exercise-Protection-Training/dp/B0BR55DMBN/ref=sxin_15_sbv_search_btf?content-id=amzn1.sym.5795aee5-71f0-4369-b632-e8c78407f2cf%3Aamzn1.sym.5795aee5-71f0-4369-b632-e8c78407f2cf&cv_ct_cx=gym%2Bgloves&keywords=gym%2Bgloves&pd_rd_i=B0BR55DMBN&sbo=EO%2BcdOgoisx3waG5xqcZQA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776&th=1" target="_blank">Add to cart</a>
+              </div>  
+          </div>
+          <div class="column">
+              <div class="card">
+                <img src="https://m.media-amazon.com/images/I/7192eL8KEhL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="width:100%">
+                <p>FLYFE Grip Strength Trainer, Plastic, 2 Pack 11-132 lbs, Forearm Strengthener, Hand Squeezer Adjustable Resistance, Hand Grip Strengthener for Muscle Building and Injury Recovery</p>
+                <p class="price">$12.99</p>
+                <a class="btn bt" href="https://www.amazon.com/FLYFE-Strengthener-Adjustable-Exerciser-Resistance/dp/B0915TY76D/ref=sr_1_5?keywords=hand%2Bgrips&sr=8-5&th=1" target="_blank">Add to cart</a>
+              </div>  
+          </div>
+    </div>
+  
+<br>
+<!-- Footer-->
+<%- include("../layout/footer.ejs"); %>
+<!-- End Footer-->
+<!-- Ion Icons Js-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<!-- JS-->
+<script>
+  document.querySelector(".mobile-btn").addEventListener("click", function () {
+  document.querySelector(".menu").classList.toggle("active");
+  });
+</script>

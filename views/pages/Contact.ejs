@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <%- include("../layout/head");  %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <style>
+.contact{
+	padding:80px 0px;
+	background-color: #222222;
+}
+
+.contact .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.contact .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 15px;
+}
+
+.contact .content .form input,
+.contact .content .form textarea{
+ height: 45px;
+ width: 100%;
+ padding:6px 12px;
+ margin-bottom: 25px;
+ background-color: transparent;
+ border:1px solid #ffffff;
+ font-family: 'Open-sans',sans-serif;
+ color:#ffffff;
+}
+.contact .content .form input:focus,
+.contact .content .form textarea:focus{
+ outline: none;
+}
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder{
+	color:#ffffff;
+}
+.contact .content .form textarea{
+	height: 100px;
+}
+
+.contact .content .form button{
+	border:none;
+	outline: none;
+	box-shadow: none;
+	height: 45px;
+	padding:0px 50px;
+	border:1px solid transparent;
+	background-color: #eeff00;
+	color:#000000;
+	font-size: 15px;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+.contact .content .form button:hover{
+	background-color:transparent;
+	color:#ffffff; 
+    border-color:#ffffff;
+}
+
+.contact .content .text h2{
+	font-size: 30px;
+    font-weight: 500;
+    color: #eeff00;
+    padding: 0px 0px 20px;
+}
+.contact .content .text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.contact .content .text .info ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+.contact .content .text .info li{
+	display: block;
+	margin-bottom: 15px;
+	color:#ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: relative;
+	padding-left: 40px;
+	font-family: 'Open-Sans',sans-serif;
+}
+.contact .content .text .info li span{
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+	font-size: 20px;
+	color:#c11325;
+}
+.contact .content .text .social {
+	padding-top: 30px;
+}
+.contact .content .text .social a{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #eeff00;
+    text-decoration: none;	
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border:1px solid transparent;
+} 
+
+.contact .content .text .social a:hover{
+	background-color: transparent;
+    border-color: #ffffff;
+}
+
+.contact .content .text .social a span{
+	color:#ffffff;
+	font-size: 20px;
+}
+
+.contact .content .text .copy{
+	border-top:1px solid #333333;
+	margin-top: 30px;
+	padding-top: 20px;
+	color:#d5bbbb;
+	font-size: 15px;
+}
+
+
+
+
+/*Responsive*/
+
+/*if screen width is less than or equal to 991px then*/
+@media(max-width: 991px){
+   .home{
+   	background-position: center;
+   }
+  .classes .content{
+  	flex-wrap: wrap;
+  }
+ .classes .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.classes .content .img{
+	display: none;
+}
+.start-today .content .box{
+	padding:15px;
+}
+}
+
+/*if screen width is less than or equal to 767px then*/
+@media(max-width: 767px){
+  .home h1{
+      font-size: 40px;
+  }
+  .about .content{
+  	 flex-wrap: wrap;
+  }
+  .about .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.service .content{
+	flex-wrap: wrap;
+}
+.service .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.classes .content .class-items .item{
+	flex-wrap: wrap;
+}
+.classes .content .class-items .item .item-text, 
+.classes .content .class-items .item .item-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.schedule .content{
+	flex-wrap: wrap;
+}
+.schedule .content .box{
+flex: 0 0 100%;
+    max-width: 100%;	
+}
+.start-today .content{
+	flex-wrap: wrap;
+}
+.start-today .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+ .gallery .content{
+  flex-wrap: wrap;
+ }
+.gallery .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.price-package .content{
+	flex-wrap: wrap;
+}
+.price-package .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .content{
+	flex-wrap: wrap;
+}
+.contact .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+/*if screen width is less than or equal to 550px then*/
+@media(max-width: 550px){
+  .home h1{
+      font-size: 30px;
+  }
+}
+
+  </style>
+</head>
+<!-- Menu-->
+<%- include("../layout/nav.ejs"); %>
+<!-- End Menu-->
+<!-- Header-->
+<section class="contact" id="contact">
+  <div class="container">
+     <div class="content">
+         <div class="box form wow slideInLeft">
+            <form method="post">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="text" name="email" placeholder="Enter Email">
+                <input type="number" name="mobile" placeholder="Enter Mobile">
+                <textarea name="message" placeholder="Enter Message"></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+         </div>
+         <div class="box text wow slideInRight">
+              <h2>Get Connected with Gym</h2>
+               <p class="title-p">At PULSE120, we make group workouts fun,daily food healthy & tasty, mental fitness easy with yoga 
+                & meditation, Medical &lifestyle care hasslefree. #BeBetterEveryDay
+               </p>
+               <div class="info">
+                   <ul>
+                       <li><span class="fa fa-map-marker"></span> Sy.no:648, Plot no: 561, H.no:5-53 1st Floor, NH 65, Pedda Amberpet, Telangana 501505</li>
+                       <li><span class="fa fa-phone"></span> +91 9014292787</li>
+                       <li><span class="fa fa-envelope"></span>pulse120gym@gmail.com</li>
+                   </ul>
+               </div>
+
+         </div>
+     </div>
+  </div>
+</section>
+
+<%- include("../layout/footer.ejs"); %>
+<!-- Ion Icons Js-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<!-- JS-->
+<script>
+  document.querySelector(".mobile-btn").addEventListener("click", function () {
+
+    document.querySelector(".menu").classList.toggle("active");
+  });
+
+
+
+/*  const form = document.querySelector("form")
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    await fetch("/contact", {
+      method: "POST",
+      body: {name: form.name.value,
+         email: form.email.value,
+        mobile: form.mobile.value,
+        message: form.message.value
+      },
+      credentials: "include", // Include cookies in the request
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Handle the response from the server if needed
+        console.log(data);
+      })
+      .catch((error) => {
+        // Handle any errors that occur during the request
+        console.error(error);
+      });
+  });
+*/
+</script>

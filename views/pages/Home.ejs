@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse 120</title>
+  <%- include("../layout/head");  %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<%- include("../layout/nav.ejs"); %>
+
+<!-- Header-->
+<header class="header">
+  <div class="container flex">
+    <div class="text">
+      <h1 class="mb">Confidence comes from <br><span>Discipline</span> and Training</h1>
+      <p class="mb">
+        Choose one app and schedule daily workouts that focus on different fitness goals<br> For example, cardio on Monday, yoga on Tuesday, strength training on Wednesday, and so on
+      </p><a class="btn mt" href="/Contact">Get Started Now</a>
+    </div>
+    <div class="visual"><img src="./images/gani.jpg" alt=""></div>
+  </div>
+</header>
+<!-- End Header-->
+<!-- Why Us-->
+<div class="section" id="why-us">
+  <div class="container flex">
+    <div class="text">
+      <h2 class="primary mb">Why Choose Us?</h2>
+      <h3 class="secondary mb">Consulatation with Expert.</h3>
+      <p class="tertiary">
+        Customized workouts to help you reach your goals
+      </p>
+      <h3 class="secondary mb">Consulatation with Expert.</h3>
+      <p class="tertiary">
+        Value addition and satisfaction
+      </p>
+    </div>
+    <div class="visual"><img src="./images/whyus.png" alt=""></div>
+  </div>
+</div>
+<!-- End Why Us-->
+<!-- Explore-->
+<div class="section" id="explore">
+  <div class="container flex">
+    <div class="visual"><img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/explore.jpg" alt=""></div>
+    <div class="text">
+      <h2 class="primary mb">Explore Our Fitness <br>          Studio</h2>
+      <p class="tertiary mb">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        esse vitae ratione quos maiores eveniet temporibus illum! Eligendi
+        amet officia unde sint totam ut optio. Molestiae, illo quia?
+      </p><a class="btn mt" href="/Contact">Get Started Now</a>
+    </div>
+  </div>
+</div>
+<!-- End Explore-->
+
+<!-- Discount-->
+<div class="section" id="discount">
+  <div class="container flex">
+    <div class="visual"><img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/discount.png" alt=""></div>
+    <div class="text">
+      <h2 class="primary mb">Fitness Classes This Summer, Pay Now And Get 25% Discount</h2>
+      <p class="tertiary mb">
+        Once your coaches learn the details of your life, they'll begin to develop a custom fitness and nutrition plan that works for your body
+      </p><a class="btn bt" href="/Contact">Book Now</a>
+    </div>
+  </div>
+</div>
+<!-- End Discount-->
+<!-- Footer-->
+<%- include("../layout/footer.ejs"); %>
+<!-- End Footer-->
+<!-- Ion Icons Js-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<!-- JS-->
+<script>
+  document.querySelector(".mobile-btn").addEventListener("click", function () {
+  document.querySelector(".menu").classList.toggle("active");
+  });
+</script>

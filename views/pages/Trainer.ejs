@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainers</title>
+  <%- include("../layout/head");  %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<!-- Menu-->
+<%- include("../layout/nav.ejs"); %>
+<!-- End Menu-->
+<!-- Header-->
+<header class="header">
+  <div class="container flex">
+    <div class="text">
+      <h1 class="mb">GYM Coach</h1>
+      <p class="mb">
+        Having a trusted expert guide you every step of the way.<br>
+        Customized workouts to help you reach your goals
+      </p>
+    </div>
+    <div class="visual"><img src="https://imgs.search.brave.com/hp-iwP2Qo5a-yh6WLoHForYk7wUUVEWQx_GTWwUYMJY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yZW5k/ZXIuZmluZWFydGFt/ZXJpY2EuY29tL2lt/YWdlcy9pbWFnZXMt/bmV3LWFydHdvcmsv/aW1hZ2VzL2FydHdv/cmtpbWFnZXMvbWVk/aXVtLzMvb2ZmaWNp/YWwtcG9ydHJhaXQt/b2YtY2FsaWZvcm5p/YS1nb3Zlcm5vci1h/cm5vbGQtc2Nod2Fy/emVuZWdnZXItc3Rh/dGUtb2YtY2FsaWZv/cm5pYS5qcGc" alt=""></div>
+  </div>
+</header>
+<!-- End Header-->
+
+<!-- Footer-->
+<%- include("../layout/footer.ejs"); %>
+<!-- End Footer-->
+<!-- Ion Icons Js-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<!-- JS-->
+<script>
+  document.querySelector(".mobile-btn").addEventListener("click", function () {
+  document.querySelector(".menu").classList.toggle("active");
+  });
+</script>

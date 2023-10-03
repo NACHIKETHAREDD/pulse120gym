@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <%- include("../layout/head");  %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <style>
+.intro { 
+  text-align: center; 
+  font-family: Arial;
+}
+
+h2 { 
+  font-size: 36px;
+}
+
+p { 
+  font-size: 14pt;
+}
+
+#image-gallery { 
+  width: 600px; 
+  margin: 0 auto;
+}
+
+#current-image { 
+  width: 100%;
+} 
+
+#image-thumbs { 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.thumb { 
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  margin-right: 10px; 
+  cursor: pointer;
+}
+  </style>
+</head>
+<!-- Menu-->
+<%- include("../layout/nav.ejs"); %>
+<!-- End Menu-->
+
+<div class="intro"> 
+  <h2>Image Gallery</h2> 
+  <p>CLick below to view the image</p> 
+</div> 
+<div id="image-gallery">
+  <img id="current-image" src="./images/image1.jpg" alt="Image 1">
+</div>
+<br>
+
+<div id="image-thumbs"></div>
+<!-- Footer-->
+<%- include("../layout/footer.ejs"); %>
+<!-- End Footer-->
+<!-- Ion Icons Js-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<!-- JS-->
+<script>
+  document.querySelector(".mobile-btn").addEventListener("click", function () {
+  document.querySelector(".menu").classList.toggle("active");
+  });
+
+  var imageThumbs = document.getElementById("image-thumbs");
+var currentImage = document.getElementById("current-image");
+
+for (var i = 1; i <= 5; i++) {
+  var thumb = document.createElement("img");
+  thumb.src = "images/image" + i + ".jpg";
+  thumb.alt = "Image " + i;
+  thumb.classList.add("thumb");
+  imageThumbs.appendChild(thumb);
+  thumb.addEventListener(
+    "click", function() {
+      currentImage.src = this.src;
+    }
+  );
+}
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oops</title>
+  <%- include("../layout/head");  %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <style>
+    a:link {
+      color: #eeff00;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: #eeff00;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgb(255, 157, 0);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: rgb(255, 153, 0);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<br>
+<h1 align="center">Oops Page not Found</h1>
+<br>
+<a href="/"><h1 align="center">HOME PAGE</h1></a>
+<!-- Ion Icons Js-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<!-- JS-->
+<script>
+  document.querySelector(".mobile-btn").addEventListener("click", function () {
+  document.querySelector(".menu").classList.toggle("active");
+  });
+</script>
